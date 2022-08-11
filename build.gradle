@@ -1,0 +1,17 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+def jUnitVersion = "5.8.2"
+
+dependencies {
+    implementation 'org.projectlombok:lombok:1.18.20'
+    testImplementation(
+            "org.junit.jupiter:junit-jupiter:$jUnitVersion",
+            'org.projectlombok:lombok:1.18.24'
+    )
+}
